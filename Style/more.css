@@ -1,0 +1,394 @@
+.whiteopacitybg {
+    background: rgba(128, 128, 128, 0.2);
+	padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+.blackopacitybg {
+    background: rgba(0, 0, 0, 0.2);
+	padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+.banner-text-intro {
+    text-align: left;
+    padding: 10% 0 0 20%;
+
+}
+.TopicTitle
+{
+	text-align: left;
+	color: white;
+    padding: 10px;
+	font-size:25px
+}
+img {
+    border-radius: 8px;
+	height: auto;
+	max-width: 100%;
+}
+
+
+p {
+    font-family: Tahoma, san-serif,Verdana;
+	font-weight:400;
+	margin:0 ;
+}
+
+html,body{font-family:Tahoma,Arial,Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+/*Header size*/
+h1{font-size:42px;}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
+
+h2,h3,h4,h5,h6{font-family:Arial,sans-serif,Helvetica;font-weight:400;margin:12px 0}.w3-wide{letter-spacing:4px}
+
+h1{
+	font-family:Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin: 3% 0 2% 0; 
+	text-shadow: 3px -3px 3px #000;
+	color:#ffc107;
+	padding: 0;
+}.w3-wide{letter-spacing:4px}
+
+.RSHeader{
+	font-size:30px;
+	font-family:Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin: 3% 0 2% 0;	 	
+	/* text-shadow: 0px 0px 15px #FFF;  */
+	/* color: rgb(0, 0, 0, 0.4); */
+	text-shadow: 1px -1px 2px #000;
+	color:#ffc107; 
+
+	line-height: 1.0;
+}.w3-wide{letter-spacing:4px}
+
+
+.RSItemTextbox
+{
+	margin:0;
+	padding: 0 0% 0 2%;
+	color: black;
+	text-align: justify;
+}
+
+.BulletHeaderL1 {
+	margin: 3% 0 2% 0;	
+    /* background-color:   #f7f7f7;  */
+    border-left: 10px solid #4CAF50;
+	/* border-right: 1px solid #4CAF50; */
+	border-bottom:2px solid #4CAF50;
+	padding:1% 0 1% 1%;
+	
+	color:#84002E;
+	/* text-shadow: 0px 0px 1px #555; */
+	font-weight:600;
+	font-size:20px;
+	line-height: 1.1;
+	font-family:Cardo, Helvetica,Tahoma,Arial,Verdana,sans-serif;
+	border-radius: 50px 0 0 50px;	
+}
+
+
+.BulletHeaderL2 {   
+	margin: 2% 0 1% 0;	
+    border-left: 7px solid #ffc107;	
+	border-bottom:1px solid  #ff9900; 	
+	padding-left:8px;	
+	
+	
+	color:#8B0424;
+	
+		
+	font-family:Rubik, Helvetica,sans-serif,Arial;
+	font-weight:300;
+	font-size:18px;
+	line-height: 1.2;
+	/*background-image: linear-gradient(to right, #FFF, #fff9e6); */
+	border-radius: 50px 0 0 50px;	
+}
+
+footer.myfixedfooter {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+	
+	/* background-color: #ffbfaa; */
+	text-align: bottom;
+	text-shadow: 1px 1px 1px #999;
+}
+footer.myrelativefooter {
+    /* background-color: lightblue; */
+    color: #111A;
+    padding-right: 20px;
+    text-align: center;
+	text-shadow: 1px 1px 1px #999;
+}
+.card {
+    box-shadow: 2px 2px 5px #555;
+    /* transition: 0.2s; */
+    width: 99%;
+	min-width: 300px;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: #DDD;
+	border-width:1px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px #F00;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: red;
+	border-width:1px;
+}
+
+.simframe
+{
+	/*box-shadow: 0px 0px 2px coral;*/
+	border-color: #ddd;
+	border-radius: 8px;
+	border-width: 1px;
+	border-style: solid;
+}
+.container { 
+   /* padding-top: 2px ; */
+   /* padding-bottom: 16px;  */
+   margin-left:1%;
+} 
+
+ol {
+  padding-left: 4%;
+}
+ul {
+  padding-left: 4%;
+}
+
+/*For ordered list of publication*/
+ol.olArticle
+{
+	line-height: 1.5;
+}
+ul.ulArticle 
+{	
+	list-style: inside none;
+	line-height: 1.5;		
+}
+
+
+
+li.liArticle
+{	
+	font-family: Verdana,sans-serif;
+	font-weight:400;
+	font-size: 14px;
+	padding-top: 10px; 
+	padding-bottom:10px;
+}
+
+ul li.liArticle::before {
+	content: "\02735"; /*https://www.toptal.com/designers/htmlarrows/symbols/*/
+	color: green;
+	font-weight: bold; 
+	display: inline-block; /* Needed to add space between the bullet and the text */ 
+	width: 1.5em; /* Also needed for space (tweak if needed) */ 
+	margin-left: -1.5em; /* Also needed for space (tweak if needed) */ 
+	/* text-shadow: 1px 1px 2px #555; */
+}
+
+div.divArticle
+{
+	text-align:left;
+	padding-top: 10px; 
+	padding-bottom:10px;
+	color:#000;
+}
+
+.Keywords
+{
+	margin-left: 5%;
+	margin-right: 0%;	
+	line-height:1.8;
+	letter-spacing:1px;
+	font-size: 16px;
+}
+
+.MarginLarge
+{
+	margin-left: 2%;	
+}
+
+.MarginSmall
+{
+	margin-left: 2%;	
+}
+
+
+
+
+
+.mainMenuStyle{	
+	color:#84002E;		
+	font-size: 18px;
+	font-weight:600;
+	float:right!important;
+	padding: 0.5%;
+	text-shadow: 0px 0px 15px #FFF;
+	/* background-color:  #FFC210; */
+	border-radius: 50px;  
+	/* border: 1px solid #FFF; */
+
+}
+
+.HeaderBGstyle{
+	background-image:url("bg.gif"); 
+	background-repeat:no-repeat; 
+	background-size:cover;
+	background-color: darkgray;
+	border-bottom:2px solid #555;
+}
+.MainBGstyle{
+	background-image:url('bg2.jpg'); 
+	background-repeat:no-repeat;
+	height:100%; 	
+}
+
+.pubHL{
+	color:#002080;
+	font-weight:900;
+	font-size:16px;
+}
+.HightLight{
+	/* color: #7F601F; */	
+	/* color:#6d2600;	 */
+	color: #8B0424;
+	font-weight:500;
+}
+.HightLightBG{
+	color:#FFF!important;
+	background-color: #8B0424!important;	
+}
+.rounded-corners-gradient-borders {
+  border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* .row:after { */
+  /* content: ""; */
+  /* display: table; */
+  /* clear: both */
+/* } */
+
+/* .column-66 { */
+  /* float: left; */
+  /* width: 66.66666%; */
+  /* padding: 20px; */
+/* } */
+
+/* .column-33 { */
+  /* float: left; */
+  /* width: 33.33333%; */
+  /* padding: 20px; */
+/* } */
+
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+.PubclassLink:before
+{
+	content: "\027B2";
+	color: #8B0424
+}
+
+.PdfLink:before
+{
+	content: "(pdf)";
+	color: #8B0424
+	
+}
+
+.DatasetLink:before
+{
+	content: "(dataset)";
+	color: #8B0424	
+}
+
+.CodeLink:before
+{
+	content: "(codes)";
+	color: #8B0424	
+}
+
+.menu {
+    display: inline-block;	
+}
+
+.lowerMenuStyle{	
+	color:white;
+	background-color: #555;
+	font-weight: 500;
+	border-radius: 50px;  
+	margin-bottom:-2px;
+	
+}
+
+.menu a {
+    
+    float: left;
+	/* font-size: 16px; */
+	padding-left: 6px;
+	padding-right: 6px;
+    text-decoration: none;
+	/* border: 1px solid #AAA; */
+	
+	
+}
+
+.menu a.active {
+    color: #8d2600;
+	background-color: #FFF;
+    border-radius: 50px; 
+}
+
+.menu a:hover:not(.active) {
+    background-color: #FFF;
+    border-radius: 50px;
+	color: red;
+}
+
+.myBtn {
+  text-decoration: none;
+  position: fixed;
+  bottom: 0.5%;
+  right: 0.5%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 0.5%;
+  border-radius: 50%;
+}
+
+.myBtn:hover {
+  background-color: #AAA;
+  color: red;
+}
+
