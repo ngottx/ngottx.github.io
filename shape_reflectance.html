@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Trung Thanh Ngo | Motion & Structure</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Style/import.css">
+<link rel="icon" href="Style/tnt2.png" type="image/png" sizes="16x16">
+</head>
+
+<body  >
+	<header class="HeaderBGstyle" >			
+		<div class="w3-container w3-content" style="max-width:1400px;">	
+		 <div class="menu w3-right mainMenuStyle">	<!-- MENU START --> 
+		  <a href="index.html" class="w3-bar-item  ">Home</a>		 
+		  <a href="profile.html" class="w3-bar-item ">Profile</a>
+		  <a href="research.html" class="w3-bar-item  ">Research</a>
+		  <a href="publication.html" class="w3-bar-item ">Publication</a>
+		  <a href="links.html" class="w3-bar-item ">Links</a>		 
+		</div> 		<!-- MENU END --> 
+		
+		<div class="w3-container RSHeader">Shape & Reflectance</div> 
+		<div class="menu lowerMenuStyle w3-right">		  
+		  <a href="cammotion.html">Camera Motion</a>		 
+		  <a href="gait.html">Gait Recognition</a>
+		  <a href="shape_reflectance.html"  class="active">Shape & Reflectance</a>
+		  <a href="ransac.html">Scale-adaptive</a>
+		  <a href="facedettherm.html">Face Detection</a>
+		</div> 			
+		</div>
+	</header>
+
+<!-- Page Container -->
+<div class="w3-container w3-content w3-margin-top" style="max-width:1400px; min-width:500px;">
+
+<!-- The Grid -->
+<div class="w3-row-padding"  >
+
+	<div class="BulletHeaderL1">Reflectance and Shape Estimation with a Light Field Camera under Natural Illumination</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">		
+			<img src="Image/reflectance_shape.png" width="100%">
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">
+			
+			<p>Reflectance and shape are two important components in visually perceiving the real world. Inferring the reflectance and shape of an object through cameras is a fundamental research topic in the field of computer vision. While three-dimensional shape recovery is pervasive with varieties of approaches and practical applications, reflectance recovery has only emerged recently. Reflectance recovery is a challenging task that is usually conducted in controlled environments, such as a laboratory environment with a special apparatus. However, it is desirable that the reflectance be recovered in the field with a handy camera so that reflectance can be jointly recovered with the shape. To that end, we present a solution that simultaneously recovers the reflectance and shape (i.e., dense depth and normal maps) of an object under natural illumination with commercially available handy cameras. 
+			</p>
+			
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Trung Thanh Ngo, Hajime Nagahara, Ko Nishino, Rin-ichiro Taniguchi, Yasushi Yagi, 
+				<br><span class="pubHL">Reflectance and Shape Estimation with a Light Field Camera under Natural Illumination</span>, 
+				<br>British Machine Vision Conference (BMVC), Sept. 2017, Oral <a href="pdf/ReflectanceShapeLightField_TTNgo.pdf"><span class="PdfLink"></span></a>
+			</li>
+			</ul>
+		
+			
+		</div>
+		<img src="Image/2objects.png" width="100%">
+	</div>
+	<hr>
+	<div class="BulletHeaderL1">Shape and light directions from shading and polarization</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">		
+			<img src="Image/shape_and_light_cvpr2015.png" width="100%">
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">
+			
+			<p>We introduce a method to recover the shape of a smooth dielectric object from polarization images taken with a light source from different directions. We present two constraints on shading and polarization and use both in a single optimization scheme. This integration is motivated by the fact that photometric stereo and polarization-based methods have complementary abilities. The polarization-based method can give strong cues for the surface orientation and refractive index, which are independent of the light direction. However, it has ambiguities in selecting between two ambiguous choices of the surface orientation, in the relationship between refractive index and zenith angle (observing angle), and limited performance for surface points with small zenith angles, where the polarization effect is weak. In contrast, photometric stereo method with multiple light sources can disambiguate the surface orientation and give a strong relationship between the surface normals and light directions. However, it has limited performance for large zenith angles, refractive index estimation, and faces the ambiguity in case the light direction is unknown. Taking their advantages, our proposed method can recover the surface normals for both small and large zenith angles, the light directions, and the refractive indexes of the object.  </p>
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Trung Thanh Ngo, Hajime Nagahara, Rin-ichiro Taniguchi, 
+				<br><span class="pubHL">Shape and light directions from shading and polarization,</span>
+				<br>Computer Vision and Pattern Recognition (CVPR), Jun. 2015: 2310-2318 <a href="pdf/TTNgo_Shape_and_Light_2015_CVPR.pdf"><span class="PdfLink"></span></a></li>
+
+			</ul>
+		
+			
+		</div>
+		<img src="Image/doll.png" width="100%">
+		<figcaption>Besides the recovered light directions, shape (normal, zenith, and azimuth maps) and reflective index map (associated with the degree-of-polarization (DOP)) are also recovered.</figcaption>
+		<br>
+		<img src="Image/4objects.png" width="100%">
+		<figcaption>Some other examples.</figcaption>
+		
+	</div>
+	<hr>
+	<br>
+	<!-- GO BACK TO RESEARCH -->
+	<div class="w3-container">		
+		<a href="research.html" class="w3-btn w3-amber w3-large w3-round-xxlarge w3-right">Go back to Research</a>
+		<a href="#top" class="myBtn" title="Go to top">Top</a>	
+	</div>
+	
+</div>
+</div>
+
+<footer  class="myrelativefooter">
+<p>&copy; 2018 Trung Thanh Ngo<p>
+</footer>
+
+
+</body></html>

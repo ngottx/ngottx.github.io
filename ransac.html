@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Trung Thanh Ngo | Motion & Structure</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Style/import.css">
+<link rel="icon" href="Style/tnt2.png" type="image/png" sizes="16x16">
+</head>
+
+<body >
+	<header class="HeaderBGstyle" >	
+		<div class="w3-container w3-content" style="max-width:1400px;">	
+		 <div class="menu w3-right mainMenuStyle">	<!-- MENU START --> 
+		  <a href="index.html" class="w3-bar-item  ">Home</a>		 
+		  <a href="profile.html" class="w3-bar-item ">Profile</a>
+		  <a href="research.html" class="w3-bar-item  ">Research</a>
+		  <a href="publication.html" class="w3-bar-item ">Publication</a>
+		  <a href="links.html" class="w3-bar-item ">Links</a>		 
+		</div> 		<!-- MENU END --> 
+		
+		<div class="w3-container RSHeader">Scale-adaptive RANSAC</div> 
+		<div class="menu lowerMenuStyle w3-right">
+		  <a href="cammotion.html">Camera Motion</a>		 
+		  <a href="gait.html">Gait Recognition</a>
+		  <a href="shape_reflectance.html">Shape & Reflectance</a>
+		  <a href="ransac.html"  class="active">Scale-adaptive</a>
+		  <a href="facedettherm.html">Face Detection</a>
+		</div> 		
+		</div>
+	</header>
+
+<!-- Page Container -->
+<div class="w3-container w3-content w3-margin-top" style="max-width:1400px; min-width:500px;">
+
+<!-- The Grid -->
+<div class="w3-row-padding"  >
+
+
+	
+	<div class="BulletHeaderL1">Scale-adaptive Estimator by Modelling Residual Distribution</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">		
+			<img src="Image/ransac_gaussian_dist.png" width="100%">
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">
+			
+			<p>We propose a robust estimator that estimates an accurate inlier scale. The proposed method first carries out an analysis to figure out the residual distribution model using the obvious case-dependent constraint, the residual function. Then the proposed inlier scale estimator performs a global search for the scale producing the residual distribution that best fits the residual distribution model. Knowledge about the residual distribution model provides a major advantage that allows us to estimate the inlier scale correctly, thereby improving the estimation robustness.  </p>
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Trung Thanh Ngo, Hajime Nagahara, Ryusuke Sagawa, Yasuhiro Mukaigawa, Masahiko Yachida, Yasushi Yagi, 
+				<br><span class="pubHL">Adaptive-Scale Robust Estimator using Distribution Model Fitting</span>, 
+				<br>In Proc. 9th Asian Conference on Computer Vision, Xi'an China, Sept., 2009  <a href="pdf/ACCV2009-RobustEstimator.pdf"><span class="PdfLink"></span></a>
+				</li>
+				
+				<li class="liArticle">Trung Thanh Ngo, Hajime Nagahara, Ryusuke Sagawa, Yasuhiro Mukaigawa, Masahiko Yachida, Yasushi Yagi, 
+				<br><span class="pubHL">Highly Robust Estimator Using a Case-dependent Residual Distribution Model</span>, 
+				<br>IPSJ Transactions on Computer Vision and Applications, vol.1, pp.260–276, Nov., 2009 <a href="https://doi.org/10.2197/ipsjtcva.1.260"><big class="PubclassLink"></big></a>
+				</li>
+			</ul>
+		
+			
+		</div>
+	</div>
+	<hr>
+	
+	<div class="BulletHeaderL1">Scale-adaptive Estimator under Gaussian distribution assumption</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">		
+			<video width="49%" controls>
+			  <source src="Image/orignal.mp4" type="video/mp4">		 
+			</video>
+			<video width="49%" controls>
+			  <source src="Image/stabilization.mp4" type="video/mp4">		 
+			</video>
+			<p> Original and stabilized videos. Video is stabilized with the proposed scale-adaptive estimator. Inliers are in green.</p>
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">
+			<p>A simple version of the above method when the residual distribution is assumed Gaussian.</p>
+			
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Trung Thanh Ngo, Hajime Nagahara , Ryusuke Sagawa, Yasuhiro Mukaigawa, Masahiko Yachida, Yasushi Yagi,  
+				<br><span class="pubHL">An Adaptive-Scale Robust Estimator for Motion Estimation</span>, 
+				<br>In Proc. 2009 IEEE International Conference on Robotics and Automation, Kobe, Japan, May 12-17, 2009. </li>
+			</li>
+			</ul>
+		
+			
+		</div>
+	</div>
+	<hr>
+	<br>
+	<!-- GO BACK TO RESEARCH -->
+	<div class="w3-container">		
+		<a href="research.html" class="w3-btn w3-amber w3-large w3-round-xxlarge w3-right">Go back to Research</a>
+		<!-- <a href="#top" class="myBtn" title="Go to top">Top</a>	 -->
+	</div>
+	
+</div>
+</div>
+
+<footer  class="myrelativefooter">
+<p>&copy; 2018 Trung Thanh Ngo<p>
+</footer>
+
+
+</body></html>

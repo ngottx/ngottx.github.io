@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Trung Thanh Ngo | Motion & Structure</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Style/import.css">
+<link rel="icon" href="Style/tnt2.png" type="image/png" sizes="16x16">
+</head>
+
+<body  >
+	<header class="HeaderBGstyle" >
+		<div class="w3-container w3-content" style="max-width:1400px;">	
+		 <div class="menu w3-right mainMenuStyle">	<!-- MENU START --> 
+		  <a href="index.html" class="w3-bar-item  ">Home</a>		 
+		  <a href="profile.html" class="w3-bar-item ">Profile</a>
+		  <a href="research.html" class="w3-bar-item  ">Research</a>
+		  <a href="publication.html" class="w3-bar-item ">Publication</a>
+		  <a href="links.html" class="w3-bar-item ">Links</a>		 
+		</div> 		<!-- MENU END --> 
+
+		<div class="w3-container RSHeader">Face Detection</div> 
+		<div class="menu lowerMenuStyle w3-right">
+		  <a href="cammotion.html">Camera Motion</a>		 
+		  <a href="gait.html">Gait Recognition</a>
+		  <a href="shape_reflectance.html">Shape & Reflectance</a>
+		  <a href="ransac.html">Scale-adaptive</a>
+		  <a href="facedettherm.html"  class="active">Face Detection</a>
+		</div> 		
+		</div>
+	</header>
+
+<!-- Page Container -->
+<div class="w3-container w3-content w3-margin-top" style="max-width:1400px; min-width:500px;">
+
+<!-- The Grid -->
+<div class="w3-row-padding"  >
+
+	<div class="BulletHeaderL1">Face Detection with Mixed Features in Thermal Image</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">		
+			<img src="Image/Adaboost_mixed_features.png" width="100%">
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">
+			
+			<p>Because facial temperature is almost constant, an IR camera has the potential to be used in detecting facial regions in IR images. However, in detecting faces, a simple temperature thresholding does not always work reliably. The standard face detection algorithm used is AdaBoost with local features, such as Haar-like, MB-LBP, and HoG features in the visible images. However, there are few studies using these local features in IR image analysis. In this paper, we propose an AdaBoost-based training method to mix these local features for face detection in thermal images. </p>
+			
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Chao Ma, Trung Thanh Ngo, Hideaki Uchiyama, Hajime Nagahara, Atsushi Shimada, Rin-ichiro Taniguchi, 
+				<br><span class="pubHL">Mixed features for face detection in thermal image</span>,
+				<br>The 13th International Conference on Quality Control by Artificial Vision (QCAV), May 2017 <a href="https://doi.org/10.1117/12.2266836"><big class="PubclassLink"></big></a>
+				</li> 
+			</ul>			
+		</div>
+	</div>
+	<hr>
+	
+	<div class="BulletHeaderL1">New Trainable Features for Face Detection in Thermal Image</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">		
+			<img src="Image/trainable_feature.png" width="100%">
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">
+			
+			<p>In this paper, we introduce two approaches relying on local features for face detection in thermal images. First, we create new trainable feature types by extending Multi-Block LBP. We consider a margin around the reference and the generally constant distribution of facial temperature. In this way, we make the features more robust to image noise and more effective for face detection in thermal images. Second, we propose an AdaBoost-based training method to get cascade classifiers with multiple types of local features. These feature types have different advantages, and therefore the description power is enhanced.</p>
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Chao Ma, Trung Thanh Ngo, Hideaki Uchiyama, Hajime Nagahara, Atsushi Shimada, Rin-ichiro Taniguchi,
+				<br><span class="pubHL">Adapting Local Features for Face Detection in Thermal Image</span>, 
+				<br>MDPI Sensors 17(12): 2741 (2017) <a href="https://doi.org/10.3390/s17122741"><big class="PubclassLink"></big></a>
+				</li> 
+			</ul>			
+		</div>
+	</div>
+	<hr>
+	<br>
+	<!-- GO BACK TO RESEARCH -->
+	<div class="w3-container">		
+		<a href="research.html" class="w3-btn w3-amber w3-large w3-round-xxlarge w3-right">Go back to Research</a>
+		<!-- <a href="#top" class="myBtn" title="Go to top">Top</a>	-->
+	</div>
+	
+</div>
+</div>
+
+<footer  class="myrelativefooter">
+<p>&copy; 2018 Trung Thanh Ngo<p>
+</footer>
+
+
+</body></html>

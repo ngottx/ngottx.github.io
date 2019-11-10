@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Trung Thanh Ngo | Motion & Structure</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Style/import.css">
+<link rel="icon" href="Style/tnt2.png" type="image/png" sizes="16x16">
+</head>
+
+<body >
+	<header class="HeaderBGstyle" >
+		<div class="w3-container w3-content" style="max-width:1400px;">	
+		 <div class="menu w3-right mainMenuStyle">	<!-- MENU START --> 
+		  <a href="index.html" class="w3-bar-item  ">Home</a>		 
+		  <a href="profile.html" class="w3-bar-item ">Profile</a>
+		  <a href="research.html" class="w3-bar-item  ">Research</a>
+		  <a href="publication.html" class="w3-bar-item ">Publication</a>
+		  <a href="links.html" class="w3-bar-item ">Links</a>		 
+		</div> 	<!-- MENU END --> 				
+		
+
+		<div class="w3-container RSHeader">Camera Motion, Localization and Map buiding</div> 
+		<div class="menu lowerMenuStyle w3-right">
+		  <a href="cammotion.html" class="active">Camera Motion</a>		 
+		  <a href="gait.html">Gait Recognition</a>
+		  <a href="shape_reflectance.html">Shape & Reflectance</a>
+		  <a href="ransac.html">Scale-adaptive</a>
+		  <a href="facedettherm.html">Face Detection</a>
+		</div> 		
+		</div>
+	</header>
+
+<!-- Page Container -->
+<div class="w3-container w3-content w3-margin-top" style="max-width:1400px; min-width:500px;">
+<!-- The Grid -->
+<div class="w3-row-padding"  >
+	<!-- <div class="RSHeaderL1">Camera Motion, Localization and Map buiding</div>  -->
+	<!-- <br> -->
+	
+	<div class="BulletHeaderL1">Hybrid Simultaneous Localization and Map Building</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">		
+			<img src="Image/cammotion_SLAM.png" width="100%" style="float:left;" >
+		</div>
+		<div class="w3-twothird RSItemTextbox">			
+			<p>We proposed an innovative hybrid visual SLAM method that combines the advantages and overcome the disadvantages of the binocular and monocular approaches. The advantage of the monocular approach is an easy tracking of feature points and an cabability of building a dense map. However, the monocular approach usually face the scaling factor problem and hence results in inaccurate robot location and built map. Meanwhile, the advantage of binocular method is an accurate robot location and built map without the scaling factor problem. However, the disadvantage of the binocular approach is a lack of map details. We combine the two approaches by adaptively switching between them for each feature point.</p>
+			
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Trung Thanh Ngo, Yusuke Sakaguchi, Hajime Nagahara, Masahiko Yachida, 
+				<br><span class="pubHL">Stereo SLAM Using Two Estimators</span>, 
+				<br>Proc. IEEE Int. Conf. Robotics and Biomimetics, pp. 19-24, Kuming, China, Dec, 2006. 
+				<br><span class="pubHL"> <font color="red"> Finalist for T. J. Tarn Best Paper in Robotics</font>  </span> </li>
+				
+				
+				<li class="liArticle">坂口雄介，Trung Thanh Ngo, 長原一，谷内田正彦, 
+				<br><span class="pubHL">単眼・両眼推定器を複合した自己位置と環境の同時推定</span>, 
+				<br>情報科学技術レターズ, pp.207-210, Sep, 2006 </li>
+		
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+	
+	<div class="BulletHeaderL1">Compound Catadioptric Camera Motion</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">
+		  <img src="Image/cammotion_Compound.png" alt="App" width="99%" style="float:right;">
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">		
+			
+			<p> We proposed method to separate the 6D camera motion into 3D rotation and 3D translation and estimate them efficiently. Camera rotation and translation can be estimated by watching only far and near feature points, respectively. Our method is suitable for a stereo camera such as a compound stereo catadiotric camera, which can quickly classify feature points into near and far. 
+			</p>
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Trung Thanh Ngo, Yuichiro Kojima, Hajime Nagahara, Ryusuke Sagawa, Yasuhiro Mukaigawa, Masahiko Yachida, Yasushi Yagi, 
+				<br><span class="pubHL">Real-time Estimation of Fast Egomotion with Feature Classification using Compound Omnidirectional Vision Sensor</span>, 
+				<br>IEICE Transactions on Information and Systems, vol.E93-D, no.01, pp.152–-166, Jan., 2010 <a href="https://doi.org/10.1587/transinf.E93.D.152"><big class="PubclassLink"></big></a>
+				</li> 
+				
+				<li class="liArticle">Trung Thanh Ngo, Hajime Nagahara , Ryusuke Sagawa, Yasuhiro Mukaigawa, Masahiko Yachida, Yasushi Yagi, 
+				<br><span class="pubHL">Robust and Real-Time Egomotion Estimation Using a Compound Omnidirectional Sensor</span>, 
+				<br>In Proc. 2008 IEEE International Conference on Robotics and Automation, pp.492--497, California, USA, May 19-23, 2008.</li>
+					
+				<li class="liArticle">Trung Thanh Ngo, Hajime Nagahara , Ryusuke Sagawa, Yasuhiro Mukaigawa, Masahiko Yachida, Yasushi Yagi, 
+				<br><span class="pubHL">Robust and Real-time Rotation Estimation of Compound Omnidirectional Sensor</span>, 
+				<br>Proc. IEEE Int. Conf. Robotics and Automation(ICRA2007) , pp.4226-4231, Rome, Italy, Apr, 2007. </li>
+			</ul>
+		</div>		
+	</div>
+
+	<hr>
+
+	<div class="BulletHeaderL1">Image Stabilization Algorithm for Video with Large Image Fluctuation</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">
+		 
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">		
+			
+			<!-- <p>We presented a bundler algorithm for fisheye cameras </p> -->
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Hitoshi Yamada, Masayuki Kimura, Jun Ohmiya, Jun’ichi Tagawa, Trung Thanh Ngo, Yasuhiro Mukaigawa, Yasushi Yagi, 
+				<br><span class="pubHL">Image Stabilization Algorithm for Video with Large Image Fluctuation</span>, 
+				<br>Proc. ICCE2009, Jan.2009.</li>
+			</ul>
+		</div>
+		<div class="w3-third">
+			
+		</div>
+	</div>
+	
+	<hr>
+	<div class="BulletHeaderL1">Bundler for Fisheye Camera Models</div>
+	<div class= "MarginLarge w3-container">
+		<div class="w3-third">
+		 
+		</div>
+		
+		<div class="w3-twothird RSItemTextbox">		
+			
+			<!-- <p>We presented a bundler algorithm for fisheye cameras </p> -->
+			<ul class="ulArticle MarginSmall">
+				<li class="liArticle">Naoyuki Maeda, Amandine Paulo-Guieu, Trung Thanh Ngo, Hideaki Uchiyama, Hajime Nagahara, Rin-ichiro Taniguchi, 
+				<br><span class="pubHL">Bundler for Fisheye Camera Models</span>,
+				<br>The 22nd Korea-Japan Joint Workshop on Frontiers of Computer Vision (FCV), pp.182-186, Feb. 2016</li>
+			</ul>
+		</div>
+		<div class="w3-third">
+			
+		</div>
+	</div>
+
+	<hr>
+	
+	<!-- GO BACK TO RESEARCH -->
+	<div class="w3-container">		
+		<a href="research.html" class="w3-btn w3-amber w3-hover-text-red w3-large w3-round-xxlarge w3-right">Go back to Research</a>
+		<a href="#top" class="myBtn" title="Go to top">Top</a>	
+	</div>
+	
+</div>
+</div>
+
+<footer  class="myrelativefooter">
+<p>&copy; 2018 Trung Thanh Ngo<p>
+</footer>
+
+
+</body></html>
