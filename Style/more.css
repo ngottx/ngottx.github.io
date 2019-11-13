@@ -79,7 +79,7 @@ h1{
 .BulletHeaderL1 {
 	margin: 3% 0 2% 0;	
     /* background-color:   #f7f7f7;  */
-    border-left: 10px solid #4CAF50;
+    border-left: 1px solid #4CAF50;
 	/* border-right: 1px solid #4CAF50; */
 	border-bottom:2px solid #4CAF50;
 	padding:1% 0 1% 1%;
@@ -96,7 +96,7 @@ h1{
 
 .BulletHeaderL2 {   
 	margin: 2% 0 1% 0;	
-    border-left: 7px solid #ffc107;	
+    border-left: 2px solid #ffc107;	
 	border-bottom:1px solid  #ff9900; 	
 	padding-left:8px;	
 	
