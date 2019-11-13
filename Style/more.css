@@ -129,7 +129,7 @@ footer.myrelativefooter {
 	text-shadow: 1px 1px 1px #999;
 }
 .card {
-    box-shadow: 2px 2px 5px #555;
+    box-shadow: 2px 2px 5px #888;
     /* transition: 0.2s; */
     width: 99%;
 	min-width: 300px;
@@ -140,10 +140,10 @@ footer.myrelativefooter {
 }
 
 .card:hover {
-    box-shadow: 2px 2px 10px #F00;
+    box-shadow: 2px 2px 10px #555;
 	border-radius: 8px;
 	border-style: solid;
-	border-color: red;
+	border-color: black;
 	border-width:1px;
 }
 
