@@ -32,6 +32,20 @@ img {
 	max-width: 100%;
 }
 
+/* body {
+  
+  background-image: url(bg2.jpg);  
+ 
+  background-position: center center;  
+  
+  background-repeat: no-repeat;  
+  
+  background-attachment: fixed;  
+ 
+  background-size: cover;  
+  
+  background-color: #464646;
+} */
 
 p {
     font-family: Tahoma, san-serif,Verdana;
@@ -43,7 +57,7 @@ html,body{font-family:Tahoma,Arial,Verdana,sans-serif;font-size:15px;line-height
 /*Header size*/
 h1{font-size:42px;}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
 
-h2,h3,h4,h5,h6{font-family:Arial,sans-serif,Helvetica;font-weight:400;margin:12px 0}.w3-wide{letter-spacing:4px}
+h2,h3,h4,h5,h6{font-family:Helvetica,Arial,sans-serif;font-weight:400;margin:12px 0; color:black;}.w3-wide{letter-spacing:4px}
 
 h1{
 	font-family:Helvetica,Arial,sans-serif;
@@ -87,17 +101,18 @@ h1{
 	color:#84002E;
 	/* text-shadow: 0px 0px 1px #555; */
 	font-weight:600;
-	font-size:20px;
+	font-size:22px;
 	line-height: 1.1;
-	font-family:Cardo, Helvetica,Tahoma,Arial,Verdana,sans-serif;
+	font-family:Verdana,Helvetica,Cardo,sans-serif,Copperplate,Tahoma, Arial;
 	border-radius: 50px 0 0 50px;	
+	/*text-transform: uppercase;*/
 }
 
 
 .BulletHeaderL2 {   
 	margin: 2% 0 1% 0;	
-    border-left: 2px solid #ffc107;	
-	border-bottom:1px solid  #ff9900; 	
+    border-left: 2px solid #F48C01;	
+	border-bottom:1px solid  #F48C01; 	
 	padding-left:8px;	
 	
 	
@@ -105,7 +120,43 @@ h1{
 	
 		
 	font-family:Rubik, Helvetica,sans-serif,Arial;
-	font-weight:300;
+	font-weight:600;
+	font-size:18px;
+	line-height: 1.2;
+	/*background-image: linear-gradient(to right, #FFF, #fff9e6); */
+	border-radius: 50px 0 0 50px;	
+}
+
+.BulletSimpleHeaderL1 {
+	margin: 3% 0 2% 0;	
+    /* background-color:   #f7f7f7;  */
+    /*border-left: 1px solid #4CAF50;*/
+	/* border-right: 1px solid #4CAF50; */
+	/*border-bottom:2px solid #4CAF50;*/
+	padding:1% 0 1% 1%;
+	
+	color:#84002E;
+	/* text-shadow: 0px 0px 1px #555; */
+	font-weight:600;
+	font-size:22px;
+	line-height: 1.1;
+	font-family:Verdana,Helvetica,Cardo,sans-serif,Copperplate,Tahoma, Arial;
+	border-radius: 50px 0 0 50px;	
+	/*text-transform: uppercase;*/
+}
+
+.BulletSimpleHeaderL2 {   
+	margin: 2% 0 1% 0;	
+   /*  border-left: 2px solid #F48C01;	
+	border-bottom:1px solid  #F48C01; 	 */
+	padding-left:8px;	
+	
+	
+	color:darkblue;
+	
+		
+	font-family:Rubik, Helvetica,sans-serif,Arial;
+	font-weight:600;
 	font-size:18px;
 	line-height: 1.2;
 	/*background-image: linear-gradient(to right, #FFF, #fff9e6); */
@@ -113,14 +164,14 @@ h1{
 }
 
 footer.myfixedfooter {
-    position: fixed;
-    bottom: 10px;
+    /*position: sticky;   */
     right: 20px;
-	
-	/* background-color: #ffbfaa; */
-	text-align: bottom;
+	bottom: 0px;	
+	/*background-color: #ffbfaa; */
+	text-align: center;
 	text-shadow: 1px 1px 1px #999;
 }
+
 footer.myrelativefooter {
     /* background-color: lightblue; */
     color: #111A;
@@ -129,7 +180,7 @@ footer.myrelativefooter {
 	text-shadow: 1px 1px 1px #999;
 }
 .card {
-    box-shadow: 2px 2px 5px #888;
+    box-shadow: 2px 2px 3px #888;
     /* transition: 0.2s; */
     width: 99%;
 	min-width: 300px;
@@ -140,7 +191,7 @@ footer.myrelativefooter {
 }
 
 .card:hover {
-    box-shadow: 2px 2px 10px #555;
+    box-shadow: 2px 2px 10px #333;
 	border-radius: 8px;
 	border-style: solid;
 	border-color: black;
@@ -253,8 +304,9 @@ div.divArticle
 }
 .MainBGstyle{
 	background-image:url('bg2.jpg'); 
-	background-repeat:no-repeat;
-	height:100%; 	
+	background-repeat:repeat;
+	background-size: cover;	
+	background-color: black;	
 }
 
 .pubHL{
@@ -326,6 +378,7 @@ a:active {
 {
 	content: "(dataset)";
 	color: #8B0424	
+	
 }
 
 .CodeLink:before
@@ -392,3 +445,24 @@ a:active {
   color: red;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/*This is for figure*/
+figure {
+  display: inline-block;
+  text-align: center;
+  border: 1px dotted lightgray;
+  margin: 5px; /* adjust as needed */
+}
+figure img {
+  vertical-align: top;
+}
+figure figcaption {
+  border: 1px dotted lightblue;
+}

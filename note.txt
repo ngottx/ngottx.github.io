@@ -1,0 +1,6 @@
+In research page
+ 	Image size for each topic is 811x481
+
+For W3.css
+I modified the original one by adding min-width property: 
+.w3-col.s1{width:8.33333%}.w3-col.s2{width:16.66666%}.w3-col.s3{width:24.99999%; min-width:310px}.w3-col.s4{width:33.33333%; min-width:310px}

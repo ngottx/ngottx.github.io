@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Trung Thanh Ngo | Shape & Reflectance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../Style/import.css">
+<link rel="icon" href="../../Style/tnt2.png" type="image/png" sizes="16x16">
+</head>
+
+<body  >
+	<header class="HeaderBGstyle" >			
+		<div class="w3-container w3-content" style="max-width:1400px;">	
+		 <div class="menu w3-right mainMenuStyle">	<!-- MENU START --> 
+		  <a href="index.html" class="w3-bar-item  ">Home</a>		 
+		  <a href="profile.html" class="w3-bar-item ">Profile</a>
+		  <a href="research.html" class="w3-bar-item  ">Research</a>
+		  <a href="publication.html" class="w3-bar-item ">Publication</a>
+		  <a href="links.html" class="w3-bar-item ">Links</a>		 
+		</div> 		<!-- MENU END --> 
+		
+		<div class="w3-container RSHeader">Shape and light directions from shading and polarization</div> 
+		<div class="menu lowerMenuStyle w3-right">		
+		  <a href="#Hardware_Setups">Camera setups</a>
+		  <a href="#citation_id">Citation</a>
+		  <a href="#citation_id">Download Datasets</a>
+		  </div> 			 
+		</div>
+	</header>
+
+<!-- Page Container -->
+<div class="w3-container w3-content w3-margin-top" style="max-width:1400px; ">
+
+<!-- The Grid -->
+<div class="w3-row-padding"  >
+
+	<div class= "MarginLarge w3-container">
+			
+		<figure>
+			<img src="../../Image/shape_and_light_cvpr2015.png" width="100%">	
+			<figcaption><b>Input</b>: multiple polarization images for each light source direction. <b>Output</b>: surface normal, light direction, refractive indices</figcaption>	
+		</figure>		
+		
+		<p>We introduce a method to recover the shape of a smooth dielectric object from polarization images taken with a light source from different directions. We present two constraints on shading and polarization and use both in a single optimization scheme. This integration is motivated by the fact that photometric stereo and polarization-based methods have complementary abilities. The polarization-based method can give strong cues for the surface orientation and refractive index, which are independent of the light direction. However, it has ambiguities in selecting between two ambiguous choices of the surface orientation, in the relationship between refractive index and zenith angle (observing angle), and limited performance for surface points with small zenith angles, where the polarization effect is weak. In contrast, photometric stereo method with multiple light sources can disambiguate the surface orientation and give a strong relationship between the surface normals and light directions. However, it has limited performance for large zenith angles, refractive index estimation, and faces the ambiguity in case the light direction is unknown. Taking their advantages, our proposed method can recover the surface normals for both small and large zenith angles, the light directions, and the refractive indexes of the object.  </p>
+					
+		<figure>
+			<img src="../../Image/doll.png" width="100%">
+			<figcaption>Besides the recovered light directions, shape (normal, zenith, and azimuth maps) and reflective index map (associated with the degree-of-polarization (DOP)) are also recovered.</figcaption>
+		</figure>	
+		
+		<br>
+		<figure>
+			<img src="../../Image/4objects.png" width="100%">
+			<figcaption>Some other examples.</figcaption>
+		</figure>	
+		
+	</div>
+	
+	
+	<div class="BulletSimpleHeaderL1 " id="Hardware_Setups">Datasets	</div>
+		
+	<figure>
+		<img src="./dataset/HardwareSetup.svg" width="100%" >	
+		<figcaption>Experimental setups for both datasets. Directional light sources and orthogonal projection is assumed.</figcaption>		
+	</figure>
+	
+	<div class="BulletSimpleHeaderL2 ">LUMENERA dataset	</div>
+	<div class= "MarginLarge">
+		<figure>
+			<img src="./dataset/LUMENERADatasetObjects.svg" width="100%" >	
+			<figcaption>Six objects and scatter plot of all eight light directions of the Lumenera dataset. </figcaption>		
+		</figure>
+		<p> <b>Polarizer angles</b> (degrees): 0, -18, -36, -54, -72, -90, -108, -126, -144, -162</p>
+		<p> <b>Light sources</b> The same light source moves to 8 locations with the same distance to the target object. Therefore, light source intensity calibration is not necessary.
+		<p> <b>Object folder structure</b>:</p>
+		<ul>
+			<li><img src="../../Image/FolderIcon.png">LightDirection1</li><br>
+			<li><img src="../../Image/FolderIcon.png">LightDirection2</li><br>
+			<li><img src="../../Image/FolderIcon.png">...</li><br>
+			<li><img src="../../Image/FolderIcon.png">LightDirection8</li><br>
+			<li>GroundtruthShape.ply</li><br>		
+		</ul>		
+	</div>
+	
+	<div class="BulletSimpleHeaderL2 ">SONY dataset	</div>
+	<div class= "MarginLarge">
+		<figure>
+			<img src="./dataset/SonyDatasetObjects.svg" width="100%" >	
+			<figcaption>Ten objects and scatter plot of all eight light directions of the SONY dataset. </figcaption>		
+		</figure>
+		<p> <b>Polarizer angles</b> (degrees): 0, 45, 90, 135</p>
+		<p> <b>Light sources</b>: 8 light sources are used and light source intensity calibration is necessary, the light source intensity is found in <b>Intensity.txt</b> </p>
+		<p> <b>Object folder structure</b>:</p>
+		
+		<ul>
+			<li><img src="../../Image/FolderIcon.png">1</li><br>
+			<li><img src="../../Image/FolderIcon.png">2</li><br>
+			<li><img src="../../Image/FolderIcon.png">...</li><br>
+			<li><img src="../../Image/FolderIcon.png">8</li><br>
+			<li>GroundtruthShape.ply</li><br>		
+		</ul>		
+	</div>
+	
+	
+	<div class="BulletSimpleHeaderL1 " id="citation_id">Citation	</div>
+	<div class= "MarginLarge">
+	If you want to use any image of our dataset, please cite our paper, thank you!
+		<pre><code>
+		@inproceedings{Ngo2015,
+		 author               = {Trung Thanh Ngo and Hajime Nagahara and Rin-ichiro Taniguchi},
+		 booktitle            = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+		 issn                 = {1063-6919},
+		 month                = {June},
+		 pages                = {2310-2318},
+		 title                = {Shape and light directions from shading and polarization},
+		 year                 = {2015},
+		 }
+		 </code></pre>	
+	</div>
+	
+	<div class="BulletSimpleHeaderL1 " id="citation_id">Download	</div>
+	<div class= "MarginLarge">
+		<a href="./dataset/LUMENERA.7z">LUMENERA.7z</a>, <a href="./dataset/SONY1.7z">SONY1.7z</a>, <a href="./dataset/SONY2.7z">SONY2.7z</a>, <a href="./dataset/SONY3.7z">SONY3.7z</a>
+	</div>
+	
+	<hr>
+	<br>
+	<!-- GO BACK TO RESEARCH -->
+	<div class="w3-container">		
+		<a href="../../research.html" class="w3-btn w3-amber w3-large w3-round-xxlarge w3-right">Go back to Research</a>
+		<a href="#top" class="myBtn" title="Go to top">Top</a>	
+	</div>
+	
+</div>
+</div>
+
+
+
+</body></html>
